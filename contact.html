@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src=storeName.js></script>
     <title>Shadman Hossain</title>
+
   </head>
   <body>
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -17,9 +19,9 @@
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
-          </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html"> Home</a>
+            </li>
           <li class="nav-item">
             <a class="nav-link" href="articles.html">Articles</a>
           </li>
@@ -27,42 +29,54 @@
             <a class="nav-link" href="research.html">Research</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="resources">Resources</a>
+            <a class="nav-link" href="resources.html">Resources</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
           </li>   
         </ul>
       </div>
     </nav>
-    <div class="container">
-      <div class="row">
-      <div class="col-md-12"> 
-         <div id="banner">
-              <img class="img-responsive img-fluid" alt="banner" src="bannerimage.png" width="1000" height="55">
-         </div>
-         <div class="row">
-            <div class="text-left col-xs-10 col-xs-offset-1 col-lg-offset-1 col-lg-7 col-md-offset-1 col-md-7 col-sm-offset-1 col-sm-7">
-              <p>Shadman is a senior at George Mason University studying Information Technology with a minor in Business. Currently, he's most interested in the Blockchain and digital asset ecosystem. During the summer, he is an instructor at Mason Game & Tech Academy teaching programming courses that include Python, Java, Javascript, and Blockchain to incoming college students.
-    ￼</p>
-    <p>
-   <br> Shadman's passion and research includes emerging technologies such as blockchain and smart contracts, artificial intelligence, and IoT. In 2018, he founded Blockchain at Mason, a student-run organization dedicated to blockchain education, research, and development at George Mason University.
-    ￼</p>
-    <p>
-    <br>Shadman is the founder and CTO of Koinstreet, a social trading network with the vision of empowering everyday people by unlocking financial services that were historically only available to the 1%. Shadman is on a path of continuous self-improvement with a vision of making the world a better place through technology and education while being an advocate for a decentralized, distributed future and giving power back to the people.
-  </p>
+
+    <div class="container" style="background-color: #ffffff">
+        <div class="row">
+          <div class="col-xs-12 text-left col-lg-offset-1 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
+            <h1>Contact</h1>
+            <p>Shadman's goal is to spread knowledge of blockchain systems and decentralized technologies that promote a better future. If you can offer an opportunity to reach a large audience, please use the form below. If you're seeking specific answers for your own understanding, please check the <a href="resources.html">educational resources page.</a> For business opportunities or other requests, please use the contact form hosted at <a href="https://earn.com/jaansnow" target="_blank">earn.com</a></p>
+            <br>
+
+        <form class="form-inline">
+            <div class="form-group mb-2">
+              <label for="name" class="sr-only">Enter Name: </label>
+              <input type="text" readonly class="form-control-plaintext" id="name" value="Enter Your Name:">
             </div>
-            <div class="text-left col-sm-offset-0 col-md-offset-0 col-xs-10 col-xs-offset-1 col-sm-4 col-lg-4 col-md-4">
-              <a class="twitter-timeline" data-width="400" data-height="500" data-theme="light" href="https://twitter.com/Jaan_snow?ref_src=twsrc%5Etfw">Tweets by Jaan_snow</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="name" class="sr-only">Name</label>
+              <input class="form-control" id="tag">
             </div>
+            <button id="submit" type="submit" class="btn btn-primary mb-2">Submit</button>
+            <div class="form-group mx-sm-3 mb-2">
+            <label for="name" class="sr-only">Previous Submissions</label>  
+            <input type = "button" class="btn btn-primary mb-2" value = "Clear All Saved Submissions" id = "clearButton">
+            </div>
+
+          </form>
+          <p id = "result"></p>
+          
+          <hr>
           </div>
-      </div>
-  </div>  
-  </div>
-  
-      <hr>
-  
+          <div class="col-md-12"> 
+          <h3>Want a guaranteed response?</h3>
+   
+                <button class="btn btn-success" onclick=" window.open('https://earn.com/jaansnow','_blank')"> Get in touch on earn.com</button>
+
+          </div>
+                
+        <br>
+        <br>
+        </div>
+        </div>  
+    <hr>
       <footer class="text-center">
             <div class="container">
               <div class="row">
@@ -72,16 +86,12 @@
               </div>
             </div>
       </footer>
+              
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-
-  <!-- Load our React component. -->
-  <script src="like_button.js"></script>
   </body>
 </html>
